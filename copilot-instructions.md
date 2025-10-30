@@ -29,9 +29,9 @@ When asked to **make a presentation**, follow these strict rules:
    footer: 
    size: 16:9
 4. The title slide must include:
-   - <!-- _class: title -->
+   - `<!-- _class: title -->`
 5. The closing slide must include:
-   - <!-- _class: end -->
+   - `<!-- _class: end -->`
 6. Use the presentations/presentaiton.css file for styling.
 7. Keep slide concise, visually clear, and structured logically (Title, Overview, Key Points, Results, Concluding Remarks)
 8. If necrssary, ask the user clarifying questions before creating slides.
