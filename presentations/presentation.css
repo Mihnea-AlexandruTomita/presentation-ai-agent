@@ -1,0 +1,34 @@
+/* presentation.css */
+section {
+  font-family: "Segoe UI", sans-serif;
+  color: #222;
+  background-color: #fefefe;
+}
+
+h1, h2, h3 {
+  color: #004080;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #004080;
+  padding: 6px;
+  text-align: left;
+}
+
+._class-title {
+  text-align: center;
+  background-color: #004080;
+  color: #fff;
+}
+
+._class-end {
+  text-align: center;
+  background-color: #004080;
+  color: #fff;
+  font-size: 2em;
+}
