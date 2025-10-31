@@ -17,19 +17,26 @@ This setup is ideal for quickly creating technical presentations from research p
 
 ## Quick Setup
 
-1. Clone this repository locally and open a PowerShell window in the `presentation-ai-agent` folder:
-
+1. Clone this repository locally and open a PowerShell window in the `presentation-ai-agent` folder: <br>
     ```powershell
     git clone <your-repo-url>
     cd presentation-ai-agent
 
-2. Run the setup script to clone all repositories defined in setup.ps1:
+2. Run the setup script to clone all repositories defined in `setup.ps1`: <br>
     `.\setup.ps1`
 
-3. Open the workspace in VS Code:
+   The script clones the following GitHub repositories:
+- [ConvSequential-SLAM](https://github.com/Mihnea-AlexandruTomita/ConvSequential-SLAM)
+- [low-resolution-vpr](https://github.com/Mihnea-AlexandruTomita/low-resolution-vpr)  
+- [seq-based-visual-filtering](https://github.com/Mihnea-AlexandruTomita/seq-based-visual-filtering)  
+
+3. Open the workspace in VS Code: <br>
     `code presentation.code-workspace`
 
 4. Ensure the Marp extension is installed and your `presentation.css` theme is loaded.
+5. If you plan to use PDFs, make sure Python is installed and required packages are available: <br>
+`python -m pip install pdfplumber`
+
 
 ## Usage
 ### Generating presentations from repositories
@@ -42,13 +49,13 @@ Follow the rules in copilot-instructions.md.
 Split content across slides so text and tables never overlap the footer.
 Wrap text in <div class="content"> and tables in <div class="table-wrapper">.
 ```
-Copy Claude's Markdown output into the presentations/ folder and preview with Marp.
+Copy Claude's Markdown output into the `presentations/` folder and preview with Marp.
 
 ### Generating presentations from PDFs:
 1. Place PDF files in `papers/`.
-2. Extract them from PDFs into Markdown using the Python script:
-`python extract_pdf.py`
-- This will crete `.md` files in `papers/papers_md/`.
+2. Extract them from PDFs into Markdown using the Python script: <br>
+    `python extract_pdf.py`
+- This will create `.md` files in `papers/papers_md/`.
 3. Ask Claude to generate a presentation based on the extracted Markdown:
 ```
 Create a Marp presentation summarising 'papers/papers_md/example.md'.
@@ -59,7 +66,9 @@ Wrap text in <div class="content"> and tables in <div class="table-wrapper">.
 
 4. Save output to `presentations/` and preview with Marp.
 
-> Note: All content generated should follow `copilot-instructions.md`. Adjust `presentation.css` for custom slide styling, footer spacing, and table handling.
+## Note: 
+- All content generated should follow `copilot-instructions.md`.
+- Adjust `presentation.css` for custom slide styling, footer spacing, and table handling.
 
 
 
