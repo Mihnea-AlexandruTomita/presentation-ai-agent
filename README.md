@@ -44,4 +44,22 @@ Wrap text in <div class="content"> and tables in <div class="table-wrapper">.
 ```
 Copy Claude's Markdown output into the presentations/ folder and preview with Marp.
 
+### Generating presentations from PDFs:
+1. Place PDF files in `papers/`.
+2. Extract them from PDFs into Markdown using the Python script:
+`python extract_pdf.py`
+- This will crete `.md` files in `papers/papers_md/`.
+3. Ask Claude to generate a presentation based on the extracted Markdown:
+```
+Create a Marp presentation summarising 'papers/papers_md/example.md'.
+Follow the rules in copilot-instructions.md.
+Split content across slides so text and tables never overlap the footer.
+Wrap text in <div class="content"> and tables in <div class="table-wrapper">.
+```
+
+4. Save output to `presentations/` and preview with Marp.
+
+> Note: All content generated should follow `copilot-instructions.md`. Adjust `presentation.css` for custom slide styling, footer spacing, and table handling.
+
+
 

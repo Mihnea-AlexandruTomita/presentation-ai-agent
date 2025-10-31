@@ -2,6 +2,7 @@
   "folders": [
     { "name": "sandbox", "path": "sandbox" },
     { "name": "presentations", "path": "presentations" },
+    { "name": "papers", "path": "papers" },
     { "name": "ConvSequential-SLAM", "path": "repos/ConvSequential-SLAM" },
     { "name": "low-resolution-vpr", "path": "repos/low-resolution-vpr" },
     { "name": "seq-based-visual-filtering", "path": "repos/seq-based-visual-filtering" }
