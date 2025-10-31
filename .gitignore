@@ -1,0 +1,32 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.venv/
+
+# Git
+.git/
+
+# Cloned repositories
+repos/ConvSequential-SLAM/
+repos/low-resolution-vpr/
+repos/seq-based-visual-filtering/
+
+# Generated presentations
+presentations/*.md
+
+# Temporary / backup files
+*.log
+*.tmp
+*.bak

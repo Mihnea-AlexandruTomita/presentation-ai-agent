@@ -1,0 +1,28 @@
+{
+  "folders": [
+    { "name": "sandbox", "path": "sandbox" },
+    { "name": "presentations", "path": "presentations" },
+    { "name": "ConvSequential-SLAM", "path": "repos/ConvSequential-SLAM" },
+    { "name": "low-resolution-vpr", "path": "repos/low-resolution-vpr" },
+    { "name": "seq-based-visual-filtering", "path": "repos/seq-based-visual-filtering" }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/.vscode": true,
+      "**/venv": true
+    },
+    "markdown.marp.themes": [
+      "presentations/presentation.css"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "marp-team.marp-vscode"
+    ]
+  }
+}
+
